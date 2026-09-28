@@ -41,7 +41,7 @@ Zasadni, J., 2026. *Late Pleistocene palaeolandscapes of the Obłazowa Cave arch
 - **Piotr Kłapyta - scientific contributor**  
   Institute of Geography and Spatial Management, Jagiellonian University, Krakow, Poland
 
-The 3D landscape models, Terragen scenes, panoramic renderings, interactive virtual tour and website were created by Jerzy Zasadni. Piotr Kłapyta contributed to the scientific interpretation underlying the palaeolandscape reconstructions. The scientific background and reconstruction methodology are described in the associated book chapter authored by Jerzy Zasadni and Piotr Kłapyta.
+The scientific concept, scientific background and overall reconstruction framework, as well as the palaeolandscape reconstruction approach, 3D landscape models, Terragen scenes, panoramic renderings, interactive virtual tour and website, were developed by Jerzy Zasadni. Piotr Kłapyta contributed to the scientific interpretation and palaeoenvironmental reconstruction. The scientific basis and reconstruction methodology are described in the associated book chapter authored by Jerzy Zasadni and Piotr Kłapyta.
 
 ## Acknowledgements
 
