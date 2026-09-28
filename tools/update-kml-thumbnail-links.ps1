@@ -1,6 +1,6 @@
 param(
   [string[]]$KmlFiles = @('scenes-github-links.kml'),
-  [string]$BaseUrl = 'https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape',
+  [string]$BaseUrl = 'https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape',
   [string]$KmzSource = 'scenes-github-links.kml',
   [string]$KmzOutput = 'scenes-github-links.kmz',
   [switch]$SkipKmz
@@ -16,11 +16,15 @@ if (-not $match.Success) {
 
 $appData = $match.Groups[1].Value | ConvertFrom-Json
 $sceneNames = @{}
-$scenesById = @{}
 $openPanoramaLabel = 'Open 360 panorama'
+$markerIconFiles = [ordered]@{
+  'present-day' = 'kml-link-green.png'
+  'ba-13-ka' = 'kml-link-yellow.png'
+  'lgm-24-ka' = 'kml-link-purple.png'
+  'mis-3-41-ka' = 'kml-link-orange.png'
+}
 foreach ($scene in $appData.scenes) {
   $sceneNames[$scene.id] = $scene.name
-  $scenesById[$scene.id] = $scene
 }
 
 function ConvertTo-HtmlAttribute {
@@ -45,30 +49,12 @@ function New-Description {
     [string]$SceneUrl
   )
 
-  $yaw = [double]$scenesById[$SceneId].initialViewParameters.yaw
-  if ($yaw -ge (-[math]::PI / 4) -and $yaw -le ([math]::PI / 4)) {
-    $face = 'f'
-  }
-  elseif ($yaw -gt ([math]::PI / 4) -and $yaw -lt (3 * [math]::PI / 4)) {
-    $face = 'r'
-  }
-  elseif ($yaw -lt (-[math]::PI / 4) -and $yaw -gt (-3 * [math]::PI / 4)) {
-    $face = 'l'
-  }
-  else {
-    $face = 'b'
-  }
-
-  # Level 1 contains a complete 90-degree cube face and is already published
-  # with the panorama, so Google Earth Web can load it with CORS enabled.
-  $thumbUrl = "$BaseUrl/tiles/$SceneId/1/$face/0/0.jpg"
+  $thumbUrl = "$BaseUrl/img/kml-thumbnails/$SceneId.jpg"
   $alt = ConvertTo-HtmlAttribute ($sceneNames[$SceneId])
 
   return '<description><![CDATA[' +
-    '<p><a href="' + $SceneUrl + '" target="_blank">' +
-    '<img src="' + $thumbUrl + '" alt="' + $alt + '" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" />' +
-    '</a></p>' +
-    '<p><a href="' + $SceneUrl + '" target="_blank"><b>' + $openPanoramaLabel + '</b></a></p>' +
+    '<img src="' + $thumbUrl + '" alt="' + $alt + '" width="320" height="180" />' +
+    '<br/><a href="' + $SceneUrl + '"><b>' + $openPanoramaLabel + '</b></a>' +
     ']]></description>'
 }
 
@@ -83,7 +69,7 @@ foreach ($file in $KmlFiles) {
     param($placemarkMatch)
 
     $placemark = $placemarkMatch.Value
-    $urlMatch = [regex]::Match($placemark, 'https://jerzas\.github\.io/Oblazowa-Cave-Paleo-Landscape/\?scene=([^"<\]\s]+)')
+    $urlMatch = [regex]::Match($placemark, '[?&]scene=([^"&<\]\s]+)')
     if (-not $urlMatch.Success) {
       return $placemark
     }
@@ -95,34 +81,45 @@ foreach ($file in $KmlFiles) {
     $sceneName = ConvertTo-XmlText ([string]$sceneNames[$sceneId])
     $placemark = [regex]::Replace($placemark, '(?s)<name>.*?</name>', "<name>$sceneName</name>", 1)
 
-    return [regex]::Replace($placemark, '(?s)<description>.*?</description>', $description, 1)
+    $placemark = [regex]::Replace($placemark, '(?s)<description>.*?</description>', $description, 1)
+    $escapedSceneUrl = ConvertTo-XmlText $sceneUrl
+    return [regex]::Replace(
+      $placemark,
+      '(<Data name="scene_url"><value>).*?(</value></Data>)',
+      ('$1' + $escapedSceneUrl + '$2'),
+      1
+    )
   })
 
-  $markerIconUrl = "$BaseUrl/img/link.png"
-  $updated = $updated.
-    Replace('http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png', $markerIconUrl).
-    Replace('https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png', $markerIconUrl)
+  foreach ($styleId in $markerIconFiles.Keys) {
+    $markerIconUrl = "$BaseUrl/img/$($markerIconFiles[$styleId])"
+    $stylePattern = '(?s)(<Style id="' + [regex]::Escape($styleId) + '-(?:normal|highlight)">.*?<IconStyle>)(.*?)(</IconStyle>)'
+    $updated = [regex]::Replace($updated, $stylePattern, {
+      param($styleMatch)
 
-  $updated = [regex]::Replace($updated, '(?s)<IconStyle>.*?</IconStyle>', {
-    param($iconStyleMatch)
+      $iconStyle = $styleMatch.Groups[2].Value
+      $iconStyle = [regex]::Replace($iconStyle, '(?s)<color>.*?</color>', '<color>d9ffffff</color>', 1)
+      $iconStyle = [regex]::Replace(
+        $iconStyle,
+        '(?s)<Icon><href>.*?</href></Icon>',
+        "<Icon><href>$markerIconUrl</href></Icon>",
+        1
+      )
+      $iconStyle = $iconStyle.
+        Replace('<scale>0.45</scale>', '<scale>0.85</scale>').
+        Replace('<scale>0.58</scale>', '<scale>1.05</scale>').
+        Replace('<scale>1.1</scale>', '<scale>0.85</scale>').
+        Replace('<scale>1.7</scale>', '<scale>0.85</scale>').
+        Replace('<scale>2.0</scale>', '<scale>1.05</scale>')
 
-    $iconStyle = $iconStyleMatch.Value
-    if (-not $iconStyle.Contains($markerIconUrl)) {
-      return $iconStyle
-    }
+      if (-not $iconStyle.Contains('<hotSpot ')) {
+        $hotSpot = '<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>'
+        $iconStyle += $hotSpot
+      }
 
-    $iconStyle = $iconStyle.
-      Replace('<scale>1.1</scale>', '<scale>0.45</scale>').
-      Replace('<scale>1.7</scale>', '<scale>0.45</scale>').
-      Replace('<scale>2.0</scale>', '<scale>0.58</scale>')
-
-    if (-not $iconStyle.Contains('<hotSpot ')) {
-      $hotSpot = '<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>'
-      $iconStyle = $iconStyle.Replace('</IconStyle>', "$hotSpot</IconStyle>")
-    }
-
-    return $iconStyle
-  })
+      return $styleMatch.Groups[1].Value + $iconStyle + $styleMatch.Groups[3].Value
+    })
+  }
 
   $targetPath = (Resolve-Path -LiteralPath $file).Path
   $utf8NoBom = New-Object System.Text.UTF8Encoding $false
@@ -141,6 +138,12 @@ if (-not $SkipKmz) {
     throw "Could not create KMZ because no thumbnails were found in: $thumbnailDirectory"
   }
 
+  $markerIconPaths = @($markerIconFiles.Values | ForEach-Object { Join-Path (Get-Location) "img\$_" })
+  $missingMarkerIcons = @($markerIconPaths | Where-Object { -not (Test-Path -LiteralPath $_) })
+  if ($missingMarkerIcons.Count -gt 0) {
+    throw "Could not create KMZ because KML marker icons are missing: $($missingMarkerIcons -join ', ')"
+  }
+
   $buildDirectory = Join-Path ([System.IO.Path]::GetTempPath()) ("kml-thumbnails-" + [guid]::NewGuid().ToString('N'))
   $archivePath = Join-Path ([System.IO.Path]::GetTempPath()) ("kml-thumbnails-" + [guid]::NewGuid().ToString('N') + '.zip')
 
@@ -149,16 +152,15 @@ if (-not $SkipKmz) {
     New-Item -ItemType Directory -Path $embeddedThumbnailDirectory -Force | Out-Null
 
     $docKml = Get-Content -Raw -Encoding UTF8 -LiteralPath $KmzSource
-    $remoteThumbnailPrefix = "$BaseUrl/img/kml-thumbnails/"
-    $docKml = $docKml.Replace($remoteThumbnailPrefix, 'img/kml-thumbnails/')
     [System.IO.File]::WriteAllText((Join-Path $buildDirectory 'doc.kml'), $docKml, $utf8NoBom)
 
     Copy-Item -LiteralPath $thumbnailFiles.FullName -Destination $embeddedThumbnailDirectory
+    Copy-Item -LiteralPath $markerIconPaths -Destination (Join-Path $buildDirectory 'img')
     Compress-Archive -Path (Join-Path $buildDirectory '*') -DestinationPath $archivePath -CompressionLevel Optimal
 
     $kmzTarget = [System.IO.Path]::GetFullPath((Join-Path (Get-Location) $KmzOutput))
     Move-Item -LiteralPath $archivePath -Destination $kmzTarget -Force
-    Write-Output "Created $KmzOutput with $($thumbnailFiles.Count) embedded thumbnails"
+    Write-Output "Created $KmzOutput with $($markerIconPaths.Count) marker icons and $($thumbnailFiles.Count) embedded thumbnails"
   }
   finally {
     if (Test-Path -LiteralPath $buildDirectory) {

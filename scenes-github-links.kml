@@ -6,18 +6,18 @@
 
     <Style id="present-day-normal">
       <IconStyle>
-        <color>bf2ca02c</color>
-        <scale>0.45</scale>
-        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+        <color>d9ffffff</color>
+        <scale>0.85</scale>
+        <Icon><href>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-link-green.png</href></Icon>
       <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf2ca02c</color><width>2</width></LineStyle>
       <LabelStyle><scale>0</scale></LabelStyle>
     </Style>
     <Style id="present-day-highlight">
       <IconStyle>
-        <color>bf2ca02c</color>
-        <scale>0.58</scale>
-        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+        <color>d9ffffff</color>
+        <scale>1.05</scale>
+        <Icon><href>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-link-green.png</href></Icon>
       <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf2ca02c</color><width>2</width></LineStyle>
       <LabelStyle><scale>1</scale></LabelStyle>
@@ -29,18 +29,18 @@
 
     <Style id="ba-13-ka-normal">
       <IconStyle>
-        <color>bf0fc4f1</color>
-        <scale>0.45</scale>
-        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+        <color>d9ffffff</color>
+        <scale>0.85</scale>
+        <Icon><href>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-link-yellow.png</href></Icon>
       <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf0fc4f1</color><width>2</width></LineStyle>
       <LabelStyle><scale>0</scale></LabelStyle>
     </Style>
     <Style id="ba-13-ka-highlight">
       <IconStyle>
-        <color>bf0fc4f1</color>
-        <scale>0.58</scale>
-        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+        <color>d9ffffff</color>
+        <scale>1.05</scale>
+        <Icon><href>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-link-yellow.png</href></Icon>
       <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf0fc4f1</color><width>2</width></LineStyle>
       <LabelStyle><scale>1</scale></LabelStyle>
@@ -52,18 +52,18 @@
 
     <Style id="lgm-24-ka-normal">
       <IconStyle>
-        <color>bfbd6794</color>
-        <scale>0.45</scale>
-        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+        <color>d9ffffff</color>
+        <scale>0.85</scale>
+        <Icon><href>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-link-purple.png</href></Icon>
       <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bfbd6794</color><width>2</width></LineStyle>
       <LabelStyle><scale>0</scale></LabelStyle>
     </Style>
     <Style id="lgm-24-ka-highlight">
       <IconStyle>
-        <color>bfbd6794</color>
-        <scale>0.58</scale>
-        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+        <color>d9ffffff</color>
+        <scale>1.05</scale>
+        <Icon><href>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-link-purple.png</href></Icon>
       <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bfbd6794</color><width>2</width></LineStyle>
       <LabelStyle><scale>1</scale></LabelStyle>
@@ -75,18 +75,18 @@
 
     <Style id="mis-3-41-ka-normal">
       <IconStyle>
-        <color>bf025fd9</color>
-        <scale>0.45</scale>
-        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+        <color>d9ffffff</color>
+        <scale>0.85</scale>
+        <Icon><href>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-link-orange.png</href></Icon>
       <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf025fd9</color><width>2</width></LineStyle>
       <LabelStyle><scale>0</scale></LabelStyle>
     </Style>
     <Style id="mis-3-41-ka-highlight">
       <IconStyle>
-        <color>bf025fd9</color>
-        <scale>0.58</scale>
-        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+        <color>d9ffffff</color>
+        <scale>1.05</scale>
+        <Icon><href>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-link-orange.png</href></Icon>
       <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf025fd9</color><width>2</width></LineStyle>
       <LabelStyle><scale>1</scale></LabelStyle>
@@ -98,121 +98,121 @@
 
     <Placemark>
       <name>Present-day</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-present-day" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/0-present-day/1/f/0/0.jpg" alt="Present-day" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-present-day" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/0-present-day.jpg" alt="Present-day" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-present-day"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#present-day</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-present-day</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-present-day</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12786,49.43079,787.38</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>B-A, 13 ka - Białka Gorge</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-ba-13-ka-bialka-gorge" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/0-ba-13-ka-bialka-gorge/1/f/0/0.jpg" alt="B-A, 13 ka - Białka Gorge" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-ba-13-ka-bialka-gorge" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/0-ba-13-ka-bialka-gorge.jpg" alt="B-A, 13 ka - Białka Gorge" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-ba-13-ka-bialka-gorge"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#ba-13-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-ba-13-ka-bialka-gorge</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-ba-13-ka-bialka-gorge</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.132774,49.430668,626.00</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>LGM, 24 ka - N of Białka Gorge</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-n-of-biaka-gorge" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/1-lgm-24-ka-n-of-biaka-gorge/1/f/0/0.jpg" alt="LGM, 24 ka - N of Białka Gorge" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-n-of-biaka-gorge" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/1-lgm-24-ka-n-of-biaka-gorge.jpg" alt="LGM, 24 ka - N of Białka Gorge" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-n-of-biaka-gorge"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#lgm-24-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-n-of-biaka-gorge</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-n-of-biaka-gorge</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12812,49.43262,696.24</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>LGM, 24 ka - Woolly mammoths</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-woolly-mammoths" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/0-lgm-24-ka-woolly-mammoths/1/f/0/0.jpg" alt="LGM, 24 ka - Woolly mammoths" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-woolly-mammoths" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/0-lgm-24-ka-woolly-mammoths.jpg" alt="LGM, 24 ka - Woolly mammoths" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-woolly-mammoths"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#lgm-24-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-woolly-mammoths</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-woolly-mammoths</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12073,49.42732,653.58</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>LGM, 24 ka - S of Białka Gorge</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-s-of-biaka-gorge" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/0-lgm-24-ka-s-of-biaka-gorge/1/f/0/0.jpg" alt="LGM, 24 ka - S of Białka Gorge" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-s-of-biaka-gorge" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/0-lgm-24-ka-s-of-biaka-gorge.jpg" alt="LGM, 24 ka - S of Białka Gorge" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-s-of-biaka-gorge"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#lgm-24-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-s-of-biaka-gorge</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-s-of-biaka-gorge</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12701,49.42038,733.69</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>LGM, 24 ka - Litwinka</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-litwinka" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/1-lgm-24-ka-litwinka/1/f/0/0.jpg" alt="LGM, 24 ka - Litwinka" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-litwinka" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/1-lgm-24-ka-litwinka.jpg" alt="LGM, 24 ka - Litwinka" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-litwinka"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#lgm-24-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-litwinka</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-litwinka</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12577,49.38082,1138.36</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>LGM, 24 ka - Sunset</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-sunset" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/0-lgm-24-ka-sunset/1/f/0/0.jpg" alt="LGM, 24 ka - Sunset" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-sunset" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/0-lgm-24-ka-sunset.jpg" alt="LGM, 24 ka - Sunset" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-sunset"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#lgm-24-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-sunset</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-sunset</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.08088,49.38966,1126.84</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>MIS 3, 41 ka - S of Białka Gorge</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-s-of-biaka-gorge" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/2-mis-3-41-ka-s-of-biaka-gorge/1/f/0/0.jpg" alt="MIS 3, 41 ka - S of Białka Gorge" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-s-of-biaka-gorge" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/2-mis-3-41-ka-s-of-biaka-gorge.jpg" alt="MIS 3, 41 ka - S of Białka Gorge" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-s-of-biaka-gorge"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-s-of-biaka-gorge</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-s-of-biaka-gorge</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12757,49.42397,772.36</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>MIS 3, 41 ka - Cave hyenas</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-hyenas" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/0-mis-3-41-ka-cave-hyenas/1/f/0/0.jpg" alt="MIS 3, 41 ka - Cave hyenas" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-hyenas" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/0-mis-3-41-ka-cave-hyenas.jpg" alt="MIS 3, 41 ka - Cave hyenas" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-hyenas"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-hyenas</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-hyenas</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12194,49.42781,651.23</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>MIS 3, 41 ka - Cave lions</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-lions" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/0-mis-3-41-ka-cave-lions/1/l/0/0.jpg" alt="MIS 3, 41 ka - Cave lions" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-lions" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/0-mis-3-41-ka-cave-lions.jpg" alt="MIS 3, 41 ka - Cave lions" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-lions"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-lions</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-lions</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.10995,49.40412,673.95</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>MIS 3, 41 ka - Wild horses</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-wild-horeses" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/1-mis-3-41-ka-wild-horeses/1/r/0/0.jpg" alt="MIS 3, 41 ka - Wild horses" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-wild-horeses" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/1-mis-3-41-ka-wild-horeses.jpg" alt="MIS 3, 41 ka - Wild horses" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-wild-horeses"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-wild-horeses</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-wild-horeses</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12310,49.42755,643.52</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>MIS 3, 41 ka - Kotelnica</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-kotelnica" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/1-mis-3-41-ka-kotelnica/1/f/0/0.jpg" alt="MIS 3, 41 ka - Kotelnica" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-kotelnica" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/1-mis-3-41-ka-kotelnica.jpg" alt="MIS 3, 41 ka - Kotelnica" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-kotelnica"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-kotelnica</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-kotelnica</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.08409,49.39083,847.68</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>MIS 3, 41 ka - Skeleton</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-skeleton" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/2-mis-3-41-ka-skeleton/1/f/0/0.jpg" alt="MIS 3, 41 ka - Skeleton" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-skeleton" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/2-mis-3-41-ka-skeleton.jpg" alt="MIS 3, 41 ka - Skeleton" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-skeleton"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-skeleton</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-skeleton</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12602,49.42623,632.28</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>MIS 3, 41 ka - Nowa Biała</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=4-mis-3-41-ka-nowa-biaa" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/4-mis-3-41-ka-nowa-biaa/1/f/0/0.jpg" alt="MIS 3, 41 ka - Nowa Biała" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=4-mis-3-41-ka-nowa-biaa" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/4-mis-3-41-ka-nowa-biaa.jpg" alt="MIS 3, 41 ka - Nowa Biała" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=4-mis-3-41-ka-nowa-biaa"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=4-mis-3-41-ka-nowa-biaa</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=4-mis-3-41-ka-nowa-biaa</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.13097,49.43755,704.20</coordinates></Point>
     </Placemark>
 
     <Placemark>
       <name>MIS 3, 41 ka - Reindeer</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/10-mis-3-41-ka-reindeer/1/l/0/0.jpg" alt="MIS 3, 41 ka - Reindeer" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<img src="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/img/kml-thumbnails/10-mis-3-41-ka-reindeer.jpg" alt="MIS 3, 41 ka - Reindeer" width="320" height="180" /><br/><a href="https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer"><b>Open 360 panorama</b></a>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
-      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer</value></Data></ExtendedData>
+      <ExtendedData><Data name="scene_url"><value>https://glaciators.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12178,49.43453,690.59</coordinates></Point>
     </Placemark>
   </Document>
